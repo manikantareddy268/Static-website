@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Manikanta's Travel Blog - Explore the world's most breathtaking destinations, hidden gems, and travel tips." />
+    <title>Manikanta's Travel Blog</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">✈ Manikanta's Travels</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Welcome to Manikanta's</p>
+            <h1 class="hero-title">Travel Blog</h1>
+            <p class="hero-description">Discover breathtaking destinations, hidden gems, and unforgettable adventures
+                from around the globe.</p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn btn-primary">Explore Now</a>
+                <a href="#tips" class="btn btn-outline">Travel Tips</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <span class="stat-number" data-target="42">0</span>
+                <span class="stat-label">Countries Visited</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="150">0</span>
+                <span class="stat-label">Cities Explored</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="300">0</span>
+                <span class="stat-label">Travel Stories</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="50000">0</span>
+                <span class="stat-label">Happy Readers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Top Destinations</h2>
+                <p class="section-desc">Hand-picked destinations that will leave you breathless and longing for more.
+                </p>
+            </div>
+            <div class="destinations-grid">
+                <div class="dest-card featured">
+                    <div class="dest-img" style="background: linear-gradient(135deg, #0077b6, #00b4d8);">
+                        <div class="dest-emoji">🏔️</div>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-tag">Adventure</span>
+                        <h3>Swiss Alps, Switzerland</h3>
+                        <p>Majestic peaks, pristine lakes, and charming villages nestled in Europe's most iconic
+                            mountain range.</p>
+                        <div class="dest-meta">
+                            <span>⭐ 4.9</span>
+                            <span>🗓 Best: Jun–Sep</span>
+                            <span>💰 $$$</span>
+                        </div>
+                        <button class="read-more-btn" onclick="openModal('alps')">Read More →</button>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-img" style="background: linear-gradient(135deg, #f77f00, #fcbf49);">
+                        <div class="dest-emoji">🏛️</div>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-tag">Culture</span>
+                        <h3>Kyoto, Japan</h3>
+                        <p>Ancient temples, geisha districts, and stunning bamboo groves in Japan's cultural heart.</p>
+                        <div class="dest-meta">
+                            <span>⭐ 4.8</span>
+                            <span>🗓 Best: Mar–May</span>
+                            <span>💰 $$</span>
+                        </div>
+                        <button class="read-more-btn" onclick="openModal('kyoto')">Read More →</button>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-img" style="background: linear-gradient(135deg, #2d6a4f, #52b788);">
+                        <div class="dest-emoji">🌴</div>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-tag">Beach</span>
+                        <h3>Maldives</h3>
+                        <p>Crystal-clear lagoons, overwater bungalows, and vibrant coral reefs in the Indian Ocean.</p>
+                        <div class="dest-meta">
+                            <span>⭐ 5.0</span>
+                            <span>🗓 Best: Nov–Apr</span>
+                            <span>💰 $$$$</span>
+                        </div>
+                        <button class="read-more-btn" onclick="openModal('maldives')">Read More →</button>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-img" style="background: linear-gradient(135deg, #9b2226, #e9c46a);">
+                        <div class="dest-emoji">🏜️</div>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-tag">Desert</span>
+                        <h3>Sahara, Morocco</h3>
+                        <p>Endless golden dunes, camel treks, and magical starlit skies in the world's largest hot
+                            desert.</p>
+                        <div class="dest-meta">
+                            <span>⭐ 4.7</span>
+                            <span>🗓 Best: Oct–Apr</span>
+                            <span>💰 $$</span>
+                        </div>
+                        <button class="read-more-btn" onclick="openModal('sahara')">Read More →</button>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-img" style="background: linear-gradient(135deg, #3a0ca3, #7209b7);">
+                        <div class="dest-emoji">🌅</div>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-tag">Romance</span>
+                        <h3>Santorini, Greece</h3>
+                        <p>Iconic white-washed buildings, stunning sunsets, and Mediterranean cuisine on a volcanic
+                            island.</p>
+                        <div class="dest-meta">
+                            <span>⭐ 4.9</span>
+                            <span>🗓 Best: Apr–Oct</span>
+                            <span>💰 $$$</span>
+                        </div>
+                        <button class="read-more-btn" onclick="openModal('santorini')">Read More →</button>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-img" style="background: linear-gradient(135deg, #023e8a, #90e0ef);">
+                        <div class="dest-emoji">🌿</div>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-tag">Nature</span>
+                        <h3>Amazon Rainforest, Brazil</h3>
+                        <p>The world's lungs — teeming with exotic wildlife, indigenous cultures, and towering trees.
+                        </p>
+                        <div class="dest-meta">
+                            <span>⭐ 4.8</span>
+                            <span>🗓 Best: Jun–Sep</span>
+                            <span>💰 $$</span>
+                        </div>
+                        <button class="read-more-btn" onclick="openModal('amazon')">Read More →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Memories</span>
+                <h2 class="section-title">Photo Gallery</h2>
+                <p class="section-desc">A glimpse into the world's most stunning landscapes and cultures.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('img/gallery_ocean_sunset.jpg');"
+                    data-label="Ocean Sunset 🌅"></div>
+                <div class="gallery-item tall" style="background-image: url('img/gallery_rainforest.jpg');"
+                    data-label="Rainforest Canopy 🌿"></div>
+                <div class="gallery-item" style="background-image: url('img/gallery_sahara.jpg');"
+                    data-label="Desert Dunes 🏜️"></div>
+                <div class="gallery-item wide" style="background-image: url('img/gallery_northern_lights.jpg');"
+                    data-label="Northern Lights 🌌"></div>
+                <div class="gallery-item" style="background-image: url('img/gallery_temple.jpg');"
+                    data-label="Ancient Temple 🏛️"></div>
+                <div class="gallery-item" style="background-image: url('img/gallery_alps_lake.jpg');"
+                    data-label="Mountain Lake 🏔️"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="tips-section" id="tips">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pro Tips</span>
+                <h2 class="section-title">Travel Tips</h2>
+                <p class="section-desc">Make the most of your adventures with these expert travel insights.</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">🎒</div>
+                    <h3>Pack Light, Travel Far</h3>
+                    <p>Always pack half of what you think you need. You'll find local items and won't be weighed down by
+                        baggage fees.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">💊</div>
+                    <h3>Health First</h3>
+                    <p>Research required vaccinations, carry a first-aid kit, and always have travel insurance before
+                        heading abroad.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">💳</div>
+                    <h3>Smart Money Management</h3>
+                    <p>Carry multiple payment methods, notify your bank of travel plans, and always keep emergency cash
+                        in local currency.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📱</div>
+                    <h3>Stay Connected Safely</h3>
+                    <p>Download offline maps, get a local SIM card, and use a VPN when connecting to public Wi-Fi
+                        networks.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🌍</div>
+                    <h3>Respect Local Culture</h3>
+                    <p>Learn a few phrases in the local language, dress appropriately for religious sites, and embrace
+                        different customs.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">📸</div>
+                    <h3>Capture Memories</h3>
+                    <p>Wake up early for golden hour shots, engage with locals, and sometimes just put the camera down
+                        and soak it in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <span class="section-tag">Stay Updated</span>
+                    <h2>Join the Adventure</h2>
+                    <p>Subscribe to Manikanta's Travel Blog for weekly destination guides, travel tips, and exclusive
+                        deals delivered straight to your inbox.</p>
+                    <div class="contact-features">
+                        <div class="cf-item">✅ Weekly destination guides</div>
+                        <div class="cf-item">✅ Exclusive travel deals</div>
+                        <div class="cf-item">✅ Insider tips & hacks</div>
+                        <div class="cf-item">✅ No spam, ever</div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="subscribe-form" id="subscribe-form" onsubmit="handleSubscribe(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Travel Interest</label>
+                            <select id="interest">
+                                <option value="">Select your interest...</option>
+                                <option value="adventure">Adventure & Hiking</option>
+                                <option value="beach">Beach & Islands</option>
+                                <option value="culture">Culture & History</option>
+                                <option value="food">Food & Culinary</option>
+                                <option value="luxury">Luxury Travel</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Subscribe Now ✈</button>
+                    </form>
+                    <div class="success-message" id="success-msg" style="display:none;">
+                        <div class="success-icon">🎉</div>
+                        <h3>Welcome aboard!</h3>
+                        <p>You'll receive your first travel guide soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>✈ Manikanta's Travels</h3>
+                    <p>Inspiring travel stories and guides from a passionate explorer. Let's discover the world
+                        together.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#tips">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#destinations">Asia</a></li>
+                        <li><a href="#destinations">Europe</a></li>
+                        <li><a href="#destinations">Americas</a></li>
+                        <li><a href="#destinations">Africa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📧 hello@manikantastravels.com</li>
+                        <li>📍 Hyderabad, India</li>
+                        <li>🌍 Traveling the world</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Manikanta's Travel Blog. Hosted on AWS S3 & CloudFront.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="modal" id="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
