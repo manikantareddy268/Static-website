@@ -34,7 +34,7 @@ AWS DEPLOYMENT STEPS
 
 1. S3 BUCKET SETUP
    - Go to AWS Console → S3 → Create Bucket
-   - Bucket name: manikanta-travel-blog (must be globally unique)
+   - Bucket name: manikanta-static-website (must be globally unique)
    - Region: us-east-1 (or your preferred region)
    - Uncheck "Block all public access" → Acknowledge
    - Create Bucket
