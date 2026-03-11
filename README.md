@@ -10,10 +10,10 @@ WEBSITE URLS (Fill in after deployment)
 --------------------------------------
 
 CloudFront Domain URL:
-  https://<your-cloudfront-id>.cloudfront.net
+  https://d3u7vva3w35ne2.cloudfront.net
 
 S3 Website Endpoint URL:
-  http://<your-bucket-name>.s3-website-<region>.amazonaws.com
+  http://manikanta-static-website.s3-website-us-east-1.amazonaws.com
 
 --------------------------------------
 FILES INCLUDED
